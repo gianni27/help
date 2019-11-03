@@ -1,0 +1,32 @@
+﻿@model Kogels
+@{ViewData["Title"] = "Home Page"; }
+@section Styles {<link href="~/css/game.css" rel="stylesheet" />}
+@{Layout = "~/Views/Shared/_Layout_mod - copy.cshtml"; }
+
+
+<div class="container"> 
+    <div class="row">
+        <div class="col-12">
+            <div class="position-absolute gamemenu-center">
+                 <a class="btn btn-start" value="shoot" asp-controller="Game" asp-action="Controleer">Shoot</a> 
+                <!--<a class="btn btn-start" asp-controller="Game" asp-action="ScherpSchutter"> Shoot!</a>-->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="position-absolute bullet-center">
+            @for (int i = 0; i < @Model.GetAantal(); i++)
+            {
+                <img src="~/img/bulletAantal.png" />
+            }
+
+        </div>
+    </div>
+</div>
+
+
+
+
+

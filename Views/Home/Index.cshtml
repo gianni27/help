@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+@*<div class="my-container px-0">
+    <div class="row header fixed-top no-gutters">
+        <div class="col-md-12 my-col ">
+        </div>
+    </div>
+</div>*@
+<div class="container h-100">
+    <div class="d-flex h-100">
+        <div class="position-absolute startmenu-center">
+            <a class="btn-new" asp-controller="Game" asp-action="GameIndex"><img src="~/img/bulletn.png" class="img-bullet"/></a>
+
+            <!--- <asp:Button runat="server" id="btn-new" Text="Log In" <img src="~/img/bulletn.png" class="img-bullet" OnClick="btnLogin_Click" />-->
+            <br />
+            <a class="btn-stat" asp-controller="Stats" asp-action="Stats"><img src="~/img/bullets.png" class="img-bullet"/></a>
+            <br />
+            <a class="btn-credit" data-toggle="modal" data-target="#myModal"><img src="~/img/bulletc.png" class="img-bullet"/></a>
+            <br />
+
+
+        </div>
+    </div>
+</div>
+<div class="container">
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-popout-bg">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <p>Programmer/Designer Acke Gianni</p>
+                    <p>Concept Ketels Bavo</p>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <p>
+                    &#169; &#64;InHomeDesign
+                    </p>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+  
+</div>
+
+

@@ -1,0 +1,33 @@
+﻿body {
+    margin-bottom: 60px;
+    background-color: rgb(49, 28, 27);
+}
+.header {
+    height: 250px;
+    width: 100%;
+    background-image: url("../img/banner.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.my-container{
+    margin-top: 250px;
+    width: 100%;
+}
+.startmenu-center {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.img-bullet {
+height: 75px;
+width: 230px;
+}
+
+.modal-header {
+    background-image: url("../img/banner.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.modal-footer.p {
+    text-align: left;
+}
